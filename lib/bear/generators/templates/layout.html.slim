@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title <%= Rails.application.class.parent_name %>
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+
+  body
+
+    div#header
+      div.row
+        div.alpha.grid_2
+          h4 <%= Rails.application.class.parent_name %>
+        ul.grid_10
+          li.active = link_to "Home", root_path
+          li = link_to "Section", ""
+
+    div.container.row
+      - if notice
+        div.alert.success = notice
+
+      - if alert
+        div.alert = alert
+
+      = yield
+
+    footer Copyright &copy; company
