@@ -17,7 +17,7 @@ button, input {
   @include button($btnGreenColor, $btnGreenBackground);
 }
 
-#header {
+.header {
   .btn-light, .btn-green, .btn {
     margin-top: $headerHeight / 5;
   }
