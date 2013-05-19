@@ -11,6 +11,14 @@ about the style and some components.
 I hope you will love this project and it will be useful. I'm just "open sourcing"
 this hoping it could be useful for someone.
 
+## Features
+
+* Simple to use and customize
+* Written in Sass
+* Lightweight
+* Make responsive design easy
+* Open source <3
+
 ## Installation
 
 I'm a big fan of Ruby on Rails so the kit is available as a gem:
@@ -25,20 +33,15 @@ stylesheet file.
 Alternatively, you can download assets using curl or wget:
 
 ~~~bash
-$ # To be written...
+$ wget https://github.com/robin850/bear/archive/master.zip
+$ unzip master.zip
 ~~~
 
-___Complete there___
+Then you can use either Sass files (located in the `sass` directory) or just
+use the generated CSS file (located in the `css` folder). Then use a `link` tag
+in your HTML files and there you go!
 
-## Features
-
-* Simple to use and customize
-* Written in Sass
-* Lightweight
-* Make responsive design easy
-* Open source <3
-
-## Basic usage
+## Basic usage with Rails
 
 If you are using Rails, the gem ships with a rails generator for the layout.
 You can optionally give the name of the generated layout:
@@ -47,7 +50,7 @@ You can optionally give the name of the generated layout:
 $ rails g bear:layout nice
 ~~~
 
-If you are not using Rails, please read the next section.
+Then add at the top of your file `@import "bear";` to use it!
 
 ## Documentation
 
