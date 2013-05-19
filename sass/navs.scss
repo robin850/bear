@@ -1,0 +1,26 @@
+.nav-pills {
+  list-style-type: none;
+
+  li {
+    display: block;
+    height: 32px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+    margin-right: 15px;
+    @include border-radius(2px);
+
+    a {
+      color: $baseColor;
+      display: block;
+      padding: 5px 12px;
+    }
+
+    &.active {
+      background: $headerBackground;
+      font-weight: bold;
+      a { color: white; }
+    }
+
+  }
+}

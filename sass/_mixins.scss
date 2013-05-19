@@ -1,0 +1,68 @@
+@mixin border-radius($radius: 3px) {
+  -khtml-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin button($color, $background) {
+  background-color: $background;
+  color: $color!important;
+  display: inline-block;
+  font-weight: bold;
+  font-size: $baseFontSize;
+  text-align: center;
+  line-height: $lineHeight;
+  padding: 7px 20px;
+  vertical-align: middle;
+  @include border-radius(2px);
+
+  &:hover {
+    background-color: darken($background, 7%);
+    cursor: pointer;
+  }
+}
+
+@mixin alert($background, $color: darken($background, 10%)) {
+  background: $background;
+  color: $color;
+  min-height: 20px;
+  margin: 0 0 7px 0!important;
+  overflow: hidden;
+  padding: 8px 10px;
+  width: 100%;
+  @include border-radius(4px);
+}
+
+@mixin label($background, $color) {
+  background: $background;
+  color: $color;
+  display: inline-block;
+  font-size: $labelFontSize;
+  font-weight: bold;
+  line-height: $lineHeight / 1.5;
+  padding: 3px 4px;
+  vertical-align: baseline;
+  white-space: nowrap;
+  @include border-radius(2px);
+}
+
+@mixin field() {
+  background: $white;
+  border: $fieldBorder;
+  color: $fieldColor;
+  display: block;
+  height: 20px;
+  font: {
+    family: $fieldFontFamily;
+    size: $fieldFontSize;
+  }
+  line-height: 20px;
+  margin: 0.5em 0;
+  outline: none;
+  padding: 3px 7px;
+  width: 300px;
+  @include border-radius(3px);
+}

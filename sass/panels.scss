@@ -1,0 +1,10 @@
+.panel {
+  background: $panelBackground;
+  border: $panelBorder;
+  margin: {
+    bottom: 2em;
+    top: 2em;
+  }
+  padding: 8px 12px;
+  @include border-radius(2px);
+}

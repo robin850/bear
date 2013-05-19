@@ -1,0 +1,19 @@
+.label, .tag {
+  @include label($lightGray, $darkGray);
+}
+
+.label.blue, .label-blue, .tag.blue, .tag-blue {
+  @include label($blue, $white);
+}
+
+.label.green, .label-green, .tag.green, .tag-green {
+  @include label($green, $white);
+}
+
+.label.brown, .label-brown, .tag.brown, .tag-brown {
+  @include label($brown, $white);
+}
+
+.label.red, .label-red, .tag.red, .tag-red {
+  @include label($red, $white);
+}

@@ -1,0 +1,11 @@
+.alert {
+  @include alert(lighten($red, 40%), $red);
+}
+
+.alert-success, .alert.success {
+  @include alert(lighten($green, 40%), $green);
+}
+
+.alert-warning, .alert.warning {
+  @include alert($yellow, $darkYellow);
+}

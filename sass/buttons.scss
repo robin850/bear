@@ -1,0 +1,24 @@
+button, input {
+  &.btn, &.btn-light, &.btn-green {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  @include button($btnColor, $btnBackground);
+}
+
+.btn-light {
+  @include button($btnLightColor, $btnLightBackground);
+}
+
+.btn-green {
+  @include button($btnGreenColor, $btnGreenBackground);
+}
+
+#header {
+  .btn-light, .btn-green, .btn {
+    margin-top: $headerHeight / 5;
+  }
+}

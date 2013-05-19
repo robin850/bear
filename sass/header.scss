@@ -1,0 +1,33 @@
+#header {
+  background-color: $headerBackground;
+  color: $headerColor;
+  height: $headerHeight;
+  line-height: $lineHeight;
+  max-height: $headerHeight;
+  overflow: hidden;
+  width: 100%;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $headerColor;
+    line-height: 1em;
+    padding-top: ($headerHeight - $baseFontSize) / 2.5;
+  }
+
+  a {
+    color: $headerColor;
+    font-size: $baseFontSize;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-top: ($headerHeight - $baseFontSize) / 2.5;
+    li {
+      display: block;
+      float: left;
+      margin-right: $lineHeight;
+    }
+    &:last-child { margin-right: 0; }
+  }
+
+}

@@ -1,0 +1,32 @@
+form {
+  margin: 1.5em 0;
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="search"],
+  input[type="time"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="number"],
+  input[type="url"],
+  input[type="week"],
+  input[type="month"] {
+    @include field();
+  }
+
+  textarea {
+    @include field();
+    min-height: 200px;
+    min-width: 300px;
+    padding-top: 8px;
+  }
+
+  fieldset {
+    border: $fieldSetBorder;
+    padding: 1.5em;
+    @include border-radius(2px);
+  }
+}

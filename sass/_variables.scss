@@ -1,0 +1,46 @@
+// Base
+$baseFontSize: 14px;
+$baseFontFamily: Helvetica, arial, freesans, clean, sans-serif;
+$baseColor: #333333;
+$lineHeight: 1.5em;
+
+// Colors
+$lightGray: #e0e0e0;
+$darkGray: #505050;
+$green: #40833e;
+$white: white;
+$yellow: darken(#fcf8e3, 10%);
+$darkYellow: #c09853;
+$red: #ac4142;
+$blue: #65bfbf;
+$brown: lighten(#211d18, 7%);
+
+// Header
+// $headerBackground: #202523;
+$headerBackground: #27221c;
+$headerHeight: 60px;
+$headerColor: $white;
+
+// Buttons
+$btnBackground: $brown;
+$btnColor: lighten(#e8d9c3, 2%);
+
+$btnGreenBackground: $green;
+$btnGreenColor: $white;
+
+$btnLightBackground: $lightGray;
+$btnLightColor: $darkGray;
+
+// Tags/labels
+$labelFontSize: 11px;
+
+// Panels
+$panelBackground: lighten($lightGray, 7%);
+$panelBorder: 1px solid lighten($darkGray, 60%);
+
+// Forms
+$fieldBorder: 1px solid lighten($darkGray, 40%);
+$fieldFontFamily: $baseFontFamily;
+$fieldFontSize: $baseFontSize;
+$fieldColor: $baseColor;
+$fieldSetBorder: 1px solid lighten($darkGray, 55%);

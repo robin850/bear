@@ -1,0 +1,23 @@
+table {
+  background: transparent;
+  border-collapse: collapse;
+  line-height: 2em;
+  margin-bottom: 2em;
+  width: 100%;
+
+  thead {
+    display: table-header-group;
+  }
+
+  th {
+    border-bottom: 1px solid $lightGray;
+    font-weight: bold;
+    padding-bottom: 3px;
+    text-align: left;
+  }
+
+  td {
+    border-bottom: 1px solid $lightGray;
+    padding: 5px;
+  }
+}
