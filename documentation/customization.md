@@ -9,7 +9,7 @@ Bear is built through variables. It lets you change most values to theme your
 site simply. The variables' name are clear so normally, you just need to have
 a look at the whole list and redefine them as you want:
 
-~~~sass
+~~~scss
 // Base
 $baseFontSize: 14px;
 $baseFontFamily: Helvetica, arial, freesans, clean, sans-serif;
@@ -63,7 +63,7 @@ Bear also comes with few mixins so you can implement new items (e.g. buttons).
 Let's take the example of a button! Let's say you cant to add a nice red button
 for dangerous tasks ; the implementation would look like this:
 
-~~~sass
+~~~scss
 // Just replace $color and $background with your values
 .btn.red, .btn-red {
   @include button($color, $background);
