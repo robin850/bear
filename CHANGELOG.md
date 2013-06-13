@@ -2,6 +2,8 @@
 
 ## 1.1 (unreleased)
 
+* Set a class instead of an id for headers in templates
+
 * Fix an eval error in the ERb template
 
 * Fix an issue with assets loading in Rails
