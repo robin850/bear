@@ -2,6 +2,8 @@
 
 ## 1.1 (unreleased)
 
+* Fix an eval error in the ERb template
+
 * Fix an issue with assets loading in Rails
 
 * Add documentation (under the documentation dir)
