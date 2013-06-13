@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1 (unreleased)
+## 1.1
 
 * Set a class instead of an id for headers in templates
 
