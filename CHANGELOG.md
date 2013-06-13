@@ -2,6 +2,8 @@
 
 ## 1.1 (unreleased)
 
+* Fix an issue with assets loading in Rails
+
 * Add documentation (under the documentation dir)
 
 * Rely on class instead of an id for headers
