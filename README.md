@@ -24,7 +24,7 @@ this hoping it could be useful for someone.
 I'm a big fan of Ruby on Rails so the kit is available as a gem:
 
 ~~~ruby
-gem 'bear-sass', '~> 1.0'
+gem 'bear-sass', '~> 1.1'
 ~~~
 
 Then run `bundle` to install it and add `@import "bear"` at the top of your
