@@ -1,19 +1,39 @@
+%label {
+  color: $white;
+  display: inline-block;
+  font-size: $labelFontSize;
+  font-weight: bold;
+  line-height: $lineHeight / 1.5;
+  padding: 3px 4px;
+  vertical-align: baseline;
+  white-space: nowrap;
+  @include border-radius(2px);
+}
+
+%tag { @extend %label; }
+
 .label, .tag {
-  @include label($lightGray, $darkGray);
+  @extend %label;
+  background: $lightGray;
+  color: $darkGray!important;
 }
 
 .label.blue, .label-blue, .tag.blue, .tag-blue {
-  @include label($blue, $white);
+  @extend %label;
+  background: $blue;
 }
 
 .label.green, .label-green, .tag.green, .tag-green {
-  @include label($green, $white);
+  @extend %label;
+  background: $green;
 }
 
 .label.brown, .label-brown, .tag.brown, .tag-brown {
-  @include label($brown, $white);
+  @extend %label;
+  background: $brown;
 }
 
 .label.red, .label-red, .tag.red, .tag-red {
-  @include label($red, $white);
+  @extend %label;
+  background: $red;
 }

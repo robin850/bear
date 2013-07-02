@@ -1,3 +1,19 @@
+%field {
+  background: $white;
+  border: $fieldBorder;
+  color: $fieldColor;
+  display: block;
+  height: 20px;
+  font-family: $fieldFontFamily;
+  font-size: $fieldFontSize;
+  line-height: 20px;
+  margin: 0.5em 0;
+  outline: none;
+  padding: 3px 7px;
+  width: 300px;
+  @include border-radius(3px);
+}
+
 form {
   margin: 1.5em 0;
 
@@ -14,11 +30,11 @@ form {
   input[type="url"],
   input[type="week"],
   input[type="month"] {
-    @include field();
+    @extend %field;
   }
 
   textarea {
-    @include field();
+    @extend %field;
     min-height: 200px;
     min-width: 300px;
     padding-top: 8px;

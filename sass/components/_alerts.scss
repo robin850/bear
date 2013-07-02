@@ -1,11 +1,26 @@
+%alert {
+  margin: 0 0 7px 0!important;
+  min-height: 20px;
+  overflow: hidden;
+  padding: 8px 10px;
+  width: 100%;
+  @include border-radius(4px);
+}
+
 .alert {
-  @include alert(lighten($red, 40%), $red);
+  @extend %alert;
+  background: lighten($red, 40%);
+  color: $red;
 }
 
 .alert-success, .alert.success {
-  @include alert(lighten($green, 40%), $green);
+  @extend %alert;
+  background: lighten($green, 40%);
+  color: $green;
 }
 
 .alert-warning, .alert.warning {
-  @include alert($yellow, $darkYellow);
+  @extend %alert;
+  background: $yellow;
+  color: $darkYellow;
 }

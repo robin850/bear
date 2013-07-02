@@ -1,24 +1,46 @@
-button, input {
-  &.btn, &.btn-light, &.btn-green {
-    border: none;
-    box-shadow: none;
-  }
+%btn {
+  display: inline-block;
+  font-size: $baseFontSize;
+  font-weight: bold;
+  line-height: $lineHeight;
+  padding: 7px 20px;
+  vertical-align: middle;
+  text-align: center;
+  @include border-radius(2px);
+
+  &:hover { cursor: pointer; }
 }
 
 .btn {
-  @include button($btnColor, $btnBackground);
+  @extend %btn;
+  background: $btnColor;
+  color: $btnBackground!important;
+  &:hover { background: darken($btnBackground, 7%); }
 }
 
 .btn-light {
-  @include button($btnLightColor, $btnLightBackground);
+  @extend %btn;
+  background: $btnLightBackground;
+  color: $btnLightColor!important;
+  &:hover { background: darken($btnLightBackground, 7%); }
 }
 
 .btn-green {
-  @include button($btnGreenColor, $btnGreenBackground);
+  @extend %btn;
+  background: $btnGreenBackground;
+  color: $btnGreenColor!important;
+  &:hover { background: darken($btnGreenBackground, 7%); }
 }
 
 .header {
   .btn-light, .btn-green, .btn {
     margin-top: $headerHeight / 5;
+  }
+}
+
+button, input {
+  &.btn, &.btn-light, &.btn-green {
+    border: none;
+    box-shadow: none;
   }
 }

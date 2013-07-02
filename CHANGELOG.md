@@ -2,6 +2,13 @@
 
 ## 2.0.0 (unreleased)
 
+* Move mixins related to components to placeholders
+
+  Move mixins such as `label` or `alert` into their respective file and
+  change them to a placeholder. The mixins should only be used to avoid
+  code duplication for properties (e.g. prefixed ones) and not for the
+  styling of a component.
+
 * Move to semantic versioning
 
 * Move to a OOScss-like architecture
