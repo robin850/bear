@@ -1,20 +1,25 @@
 @charset "UTF-8";
 
-// Import partials
-@import "variables";
-@import "mixins";
+// Variables, mixins and reset
+@import "settings/*";
 
-// Import components
-@import "reset";
-@import "grid";
+// Layout components: grid, header and typography
+@import "layout/*";
 
-@import "header";
-@import "navs";
+// UI components such as tables, panels, forms and so on
+@import "components/*";
 
-@import "typography";
-@import "alerts";
-@import "buttons";
-@import "tags";
-@import "panels";
-@import "tables";
-@import "forms";
+// Tablet Portrait width to 960px
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  @import "responsive/tablet-views/*";
+}
+
+// All Mobile Widths
+@media only screen and (max-width: 767px) {
+  @import "responsive/mobile-views/*";
+}
+
+// Mobile Landscape Width to Tablet Portrait Width
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  @import "responsive/mobile-landscape-views/*";
+}

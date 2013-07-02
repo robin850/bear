@@ -2,6 +2,17 @@
 
 ## 1.2 (unreleased)
 
+* Move to a OOScss-like architecture
+
+  Move the whole `sass` folder to a OOScss-like architecture. The previous
+  folder's organization was a one level deep and a bit messy. The folder
+  is now composed of the following folders:
+
+    - components : UI elements (e.g. alerts, buttons)
+    - layout : stuff related to the layout basics (e.g. grid, header)
+    - responsive : stylesheets related to specific devices
+    - settings : variables, mixins and reset partials
+
 ## 1.1
 
 * Set a class instead of an id for headers in templates
