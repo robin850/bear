@@ -2,6 +2,12 @@
 
 ## 2.0.0 (unreleased)
 
+* Make header's button selector a bit more flexible
+
+  Previously, the list of available buttons was hard-coded directly in
+  the stylesheet file ; it made new buttons (implemented by the user for
+  example) not stylized correctly in headers.
+
 * Move mixins related to components to placeholders
 
   Move mixins such as `label` or `alert` into their respective file and

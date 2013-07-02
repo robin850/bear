@@ -32,10 +32,8 @@
   &:hover { background: darken($btnGreenBackground, 7%); }
 }
 
-.header {
-  .btn-light, .btn-green, .btn {
-    margin-top: $headerHeight / 5;
-  }
+.header a[class="btn"], .header a[class^="btn"] {
+  margin-top: $headerHeight / 5;
 }
 
 button, input {
