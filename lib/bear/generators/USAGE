@@ -2,7 +2,7 @@ Description:
     Generate a super simple layout using ERb or Slim
 
 Example:
-  rails g bear:layout admin --slim
+    rails g bear:layout admin --slim
 
-  This will create a layout file located in:
-    app/views/layouts/admin.html.slim
+    This will create a layout file located in:
+      app/views/layouts/admin.html.slim
