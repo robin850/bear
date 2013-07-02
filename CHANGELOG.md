@@ -15,7 +15,7 @@
     - responsive : stylesheets related to specific devices
     - settings : variables, mixins and reset partials
 
-## 1.1
+## 1.1 (June 13, 2013)
 
 * Set a class instead of an id for headers in templates
 
@@ -27,7 +27,7 @@
 
 * Rely on class instead of an id for headers
 
-## 1.0
+## 1.0 (May 19, 2013)
 
 * Add some documentation for the following sections
   - Grid system
