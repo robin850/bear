@@ -1,6 +1,8 @@
 # Changelog
 
-## 1.2 (unreleased)
+## 2.0.0 (unreleased)
+
+* Move to semantic versioning
 
 * Move to a OOScss-like architecture
 
