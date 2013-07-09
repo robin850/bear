@@ -50,7 +50,15 @@ You can optionally give the name of the generated layout:
 $ rails g bear:layout nice
 ~~~
 
-Then add at the top of your file `@import "bear";` to use it!
+Then add at the top of your file `@import "bear";` to use it! Alternatively, you
+can simply invoke the structure generator like this:
+
+~~~
+$ rails g bear:structure
+~~~
+
+to create the Bear's folder structure in your application. Your application
+stylesheets will also be edited to load these files and also load Bear.
 
 ## Documentation
 

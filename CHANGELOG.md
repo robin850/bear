@@ -2,6 +2,20 @@
 
 ## 2.0.0 (unreleased)
 
+* Add a structure generator
+
+  Invoking the `rails g bear:structure` command the stylesheets folder
+  will be organized as the following:
+
+    - components
+    - layout
+    - modules
+    - responsive
+    - settings
+
+  The application.css.scss file will be changed to load the files under
+  each directory (and also load bear).
+
 * Make header's button selector a bit more flexible
 
   Previously, the list of available buttons was hard-coded directly in
