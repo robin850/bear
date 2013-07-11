@@ -22,7 +22,9 @@ module Bear
       end
 
       def create_settings_folder
+        variables_file = "../../../../sass/variables/settings/_variables.scss"
         create_file "app/assets/stylesheets/settings/_mixins.scss"
+        template variables_file, "app/assets/stylesheets/settings/_variables.scss"
       end
 
       def create_application_stylesheet

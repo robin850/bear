@@ -2,6 +2,12 @@
 
 ## 2.0.0 (unreleased)
 
+* Improve the structure generator with variables
+
+  Now, when running the structure generator, the `settings/_variables.scss`
+  file is filled with the actual content of the same file under the sass
+  directory ; it's now easier for the user to customize Bear.
+
 * Add a structure generator
 
   Invoking the `rails g bear:structure` command the stylesheets folder
