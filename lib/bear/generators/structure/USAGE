@@ -1,0 +1,14 @@
+Description:
+    Generate Bear's folder structure into your application and fill in
+    the variables partial to easily customize Bear and also your main
+    stylesheet file (application.css.scss).
+
+Example:
+    rails g bear:structure
+
+    This will create the following folders:
+      app/assets/stylesheets/components
+      app/assets/stylesheets/layout
+      app/assets/stylesheets/modules
+      app/assets/stylesheets/responsive
+      app/assets/stylesheets/settings

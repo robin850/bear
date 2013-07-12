@@ -6,19 +6,19 @@ module Bear
       source_root File.expand_path("../templates", __FILE__)
 
       def create_components_folder
-        empty_folder "app/assets/stylesheets/components"
+        empty_directory "app/assets/stylesheets/components"
       end
 
       def create_layout_folder
-        empty_folder "app/assets/stylesheets/layout"
+        empty_directory "app/assets/stylesheets/layout"
       end
 
       def create_module_folder
-        empty_folder "app/assets/stylesheets/modules"
+        empty_directory "app/assets/stylesheets/modules"
       end
 
       def create_responsive_folder
-        empty_folder "app/assets/stylesheets/responsive/mobile-view"
+        empty_directory "app/assets/stylesheets/responsive/mobile-view"
       end
 
       def create_settings_folder
