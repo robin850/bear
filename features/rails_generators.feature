@@ -1,7 +1,9 @@
 Feature: Generators
 
-  Scenario: Layout generator
+  Background:
     Given I have a brand new Rails application
+
+  Scenario: Layout generator
     When I run the "bear:layout" generator
     Then I should have a "application.html.erb" layout
 
@@ -20,4 +22,3 @@ Feature: Generators
     And the "modules" folder should exist
     And the "responsive/mobile-view" folder should exist
     And the "settings" folder should exist
-    And the "application.css.scss" file should contain "@import \"bear\""

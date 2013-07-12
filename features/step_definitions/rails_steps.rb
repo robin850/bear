@@ -16,14 +16,14 @@ end
 
 Then(/^I should have a "(.*?)" layout$/) do |template|
   in_current_dir do
-    check_file_presence ["app/views/layouts/#{template}"], true
+    File.exist?("app/views/layouts/#{template}").should be_true
   end
 end
 
 When(/^I run the "(.*?)" generator with "(.*?)"$/) do |generator, arg|
-  steps %{When I successfully run `bundle exec rails g #{generator} #{arg}`}
+  steps %{When I successfully run `bundle exec rails g #{generator} #{arg} --force`}
 end
 
 When(/^I run the "(.*?)" generator$/) do |generator|
-  steps %{When I successfully run `bundle exec rails g #{generator}`}
+  steps %{When I successfully run `bundle exec rails g #{generator} --force`}
 end
