@@ -4,7 +4,7 @@ Description:
     stylesheet file (application.css.scss).
 
 Example:
-    rails g bear:structure
+    rails g bear:bootstrap
 
     This will create the following folders:
       app/assets/stylesheets/components

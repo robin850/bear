@@ -2,7 +2,7 @@ require 'rails/generators'
 
 module Bear
   module Generators
-    class StructureGenerator < Rails::Generators::Base
+    class BootstrapGenerator < Rails::Generators::Base
       source_root File.expand_path("../templates", __FILE__)
 
       def create_components_folder

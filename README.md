@@ -51,10 +51,10 @@ $ rails g bear:layout nice
 ~~~
 
 Then add at the top of your file `@import "bear";` to use it! Alternatively, you
-can simply invoke the structure generator like this:
+can simply invoke the bootstrap generator like this:
 
 ~~~
-$ rails g bear:structure
+$ rails g bear:bootstrap
 ~~~
 
 to create the Bear's folder structure in your application. Your application

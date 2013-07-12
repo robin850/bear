@@ -2,6 +2,8 @@
 
 ## 2.0.0 (unreleased)
 
+* Rename the structure generator to boostrap
+
 * Improve the structure generator with variables
 
   Now, when running the structure generator, the `settings/_variables.scss`

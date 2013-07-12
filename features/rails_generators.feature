@@ -16,7 +16,7 @@ Feature: Generators
     Then I should have a "user.html.slim" layout
 
   Scenario: Structure generator
-    When I run the "bear:structure" generator
+    When I run the "bear:bootstrap" generator
     Then the "components" folder should exist
     And the "layout" folder should exist
     And the "modules" folder should exist
